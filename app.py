@@ -46,8 +46,6 @@ Session = sessionmaker(bind=connection)
 Session.configure(bind = connection)
 session = Session()
 
-#db = pd.read_sql_table('global_land_temperatures_by_city_prod_2', connection).reset_index().set_index('District')
-
 @app.route('/')
 def index():
     return render_template('index.html')
