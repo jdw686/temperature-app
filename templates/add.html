@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Temperature History</title>
+  </head>
+  <body>
+    <header>
+    <h2>Add Temperature History</h2>
+    </header>
+    <br>
+    <h4>Please Add Historical Temperature Data for a City below:
+      <form action="/add_confirmation" method = "GET">
+        <table>
+          <tr>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td><input type="date" name="dt"></input></td>
+          </tr>
+          <tr>
+            <th>Average Temperature</th>
+          </tr>
+          <tr>
+            <td><input type="number" name="avg_temp"></input></td>
+          </tr>
+          <tr>
+            <th>Average Temperature Uncertainty</th>
+          </tr>
+          <tr>
+            <td><input type="number" name="avg_temp_unc"></input></td>
+          </tr>
+          <tr>
+            <th>City</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="city"></input></td>
+          </tr>
+          <tr>
+            <th>Country</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="country"></input></td>
+          </tr>
+          <tr>
+            <th>Latitude (format xx.xxN, e.g.)</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="latitude"></input></td>
+          </tr>
+          <tr>
+            <th>Longitude (format xx.xxW, e.g.)</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="longitude"></input></td>
+          </tr>
+        </table>
+        <br>
+        <input type="submit" value="Enter"></input>
+  </body>
+</html>

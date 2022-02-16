@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Election Matrix</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      h2, input {margin: 0; padding: 0; text-align: center; font-family: Avenir Book;}
+      .table {margin: 0 auto; display:block; text-align: left; width: 1200px;}
+    </style>
+  </head>
+  <body>
+    <header><h2>Maximum Temperatures Between {{start_date}} and {{end_date}}.</h2></header>
+      <table class="table table-sm" name="matrix">
+          <tr>
+            <th scope="col">City</th>
+            <th scope="col">Max Temperature</th>
+          </tr>
+
+          {% for i in range(0, cities_amount)%}
+          <tr>
+            <td scope="row">{{top_x_cities[i]}}</td>
+            <td scope="row">{{top_x_temps[i]}}</td>
+          {% endfor %}
+          </tr>
+          
+      </table>
+    <input type="submit" value="Enter"></input>
+  </body>
+</html>

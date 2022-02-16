@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Temperature History</title>
+  </head>
+  <body>
+    <header>
+    <h2>Add Temperature History</h2>
+    <div class="container">
+      <div class="col-xs-3">
+      <h4>Select Data To Update:</h4>
+      <form action="/update_confirmation" method="GET">
+      <select class="form-control" name="options">
+          {% for i in range(0, len_options)%}
+          <option value="{{options[i]}}">{{options[i]}}</option>
+          {% endfor %}
+      </select>
+      <h6>Enter date to be updated:</h6>
+      <td><input type="date" name="dt"></input></td>
+      <h6>Enter city to be updated:</h6>
+      <td><input type="text" name="city"></input></td>
+      <h6>Enter updated value:</h6>
+      <input type="number" name="selection_input"></input>
+      <input type="submit" value="Enter"></input>
+    </form>
+    </div>
+    </div>
+    </body>

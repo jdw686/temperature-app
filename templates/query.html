@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Query Temperature History</title>
+  </head>
+  <body>
+    <header>
+    <h2>Query Temperature History</h2>
+    </header>
+    <br>
+    <h4>This page returns the top N cities with the highest maximum temperature based on a given time range.
+    <h4>Please give a start date and end date, as well as the number of cities returned in the results.</h4>
+      <form action="/query_results" method = "GET">
+        <table>
+          <tr>
+            <th>Start Date</th>
+          </tr>
+          <tr>
+            <td><input type="date" name="start_date"></input></td>
+          </tr>
+          <tr>
+            <th>End Date</th>
+          </tr>
+          <tr>
+            <td><input type="date" name="end_date"></input></td>
+          </tr>
+          <tr>
+            <th>Amount of Cities</th>
+          </tr>
+          <tr>
+            <td><input type="number" name="cities_amount"></input></td>
+          </tr>
+        </table>
+        <br>
+        <input type="submit" value="Enter"></input>
+  </body>
+</html>
