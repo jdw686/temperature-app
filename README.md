@@ -6,6 +6,6 @@ My experience is based primarily in Python and Pandas. Our current Flask applica
 2. Challenges
 Uploading the data to a local PostgreSQL database was surprisingly a challenge. With 8,5 million entries, and the file size of about 530 MB, I was not sure how long it would take to fully upload the data into my local database. To track this, I used the to_sql method in Pandas in a for loop to monitor the progress of the upload. I iterated based on the amount of cities in the data set. See code below:
 
-for i in range(len(df.City.unique()[12:])):
+for i in range(len(df.City.unique())):
     print(i)
     df[df.City == df.City.unique()[i]].to_sql('global_land_temperatures_by_city_prod', connection, if_exists='append')
