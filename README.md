@@ -19,5 +19,7 @@ The second challenge I had was to determine whether to use a ORM based or Pandas
     b. Tie between Masjed E Soleyman and Ahvaz (at 39.156C). I chose Ahvaz to add and update the temperature.
     c. A maximum average temperature for Ahvaz was added at 39.256C for the current calendar month (let's suspend belief for a moment).
     d. With the input of the date and city mentioned above, I updated the entry to be 2.5 degrees lower, at 36.756C.
+    
+4. Small PS: a requirements.txt file would be an additional improvement I would add in the repository, but I ran out of the recommended amount of time. Should be a simple improvement to be implemented.
 
 Setting up the application took about 3 hours from start to finish, with an additional hour or so for uploading the data and writing the readme file, respectively.
